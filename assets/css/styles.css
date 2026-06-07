@@ -28,9 +28,10 @@ body {
   --primary-hue: 212deg;
   --primary-saturation: 100%;
   --primary-lightness: 50%;
-  --hextra-navbar-height: 3.5rem;
+  --hextra-navbar-height: 2.5rem;
   --hextra-banner-height: 2rem;
-  --menu-height: 3.75rem; /* 60px */
+  --menu-height: 3.75rem;
+  /* 60px */
 }
 
 .dark {
@@ -58,6 +59,7 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {
