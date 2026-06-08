@@ -12,10 +12,37 @@
 */
 
 :root {
-  --hextra-max-page-width: {{ $maxPageWidth }};
-  --hextra-max-content-width: {{ $maxContentWidth }};
-  --hextra-max-navbar-width: {{ $maxNavbarWidth }};
-  --hextra-max-footer-width: {{ $maxFooterWidth }};
+  --hextra-max-page-width: {
+      {
+      $maxPageWidth
+    }
+  }
+
+  ;
+
+  --hextra-max-content-width: {
+      {
+      $maxContentWidth
+    }
+  }
+
+  ;
+
+  --hextra-max-navbar-width: {
+      {
+      $maxNavbarWidth
+    }
+  }
+
+  ;
+
+  --hextra-max-footer-width: {
+      {
+      $maxFooterWidth
+    }
+  }
+
+  ;
 }
 
 .hextra-max-page-width {
@@ -32,4 +59,23 @@
 
 .hextra-max-footer-width {
   max-width: var(--hextra-max-footer-width);
+}
+
+/*
+
+  Limp's Treatment
+──────────────────────────────────
+*/
+
+:root {
+  --symbols: "Symbols Nerd Font";
+  --sans: "Atkinson Hyperlegible", var(--symbols);
+}
+
+html {
+  text-rendering: optimizeLegibility;
+}
+
+main#content .content {
+  font-family: var(--sans);
 }
