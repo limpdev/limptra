@@ -13,5 +13,12 @@
     {{ end }}
     {{ partial "components/search-dialog.html" . }}
     {{ partial "scripts.html" . }}
+    <script src="https://unpkg.com/swup@4"></script>
+    <script>
+      const swup = new Swup({
+      // tell Swup which container(s) to replace
+      containers:['main#content']
+      });
+    </script>
   </body>
 </html>
